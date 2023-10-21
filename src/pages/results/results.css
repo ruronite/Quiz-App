@@ -1,0 +1,59 @@
+.result-buttons {
+    width: 200px;
+    padding: 5px;
+    margin: 5px 5px;
+    background-color: #5255a5;
+    color: white;
+    
+}
+
+.result-buttons:hover {
+    background-color: #fdd402;
+    color: black;
+}
+
+#all-results {
+    text-align: center;
+    width: 100%;
+}
+
+#table-container{
+    width: 100%;
+    
+}
+
+table {
+    margin: 10px auto;
+    border: 2px solid black;
+    width: 80%;
+    overflow: scroll;
+}
+
+thead {
+    background-color: whitesmoke; 
+    height: 30px;
+}
+
+thead td {
+    font-weight: bold;
+}
+
+.table-row {
+    border-bottom: 2px solid black; 
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightblue;
+}
+
+@media only screen and (max-width: 280px) {
+    th, td {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+}
+/*
+td {
+    background-color: aqua;
+}*/

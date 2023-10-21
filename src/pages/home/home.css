@@ -1,0 +1,53 @@
+#home {
+    text-align: center;
+    background: url("./resources/teacher.jpg");    
+    background-blend-mode: saturation;
+    min-height: calc(100vh - 80px);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.86);
+    background-repeat: repeat;
+    background-position: center;
+    
+    
+    color: white;
+}
+
+#home p {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.nav-button{
+    width: 60%;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 3px 5px gray;
+    position: relative;
+    transition: all 450ms ease-in; 
+}
+
+.nav-button:hover {
+    cursor: pointer;
+    box-shadow: none;
+    top: 2px;
+}
+
+
+@media only screen and (max-width: 800px){
+    #home {
+        background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+       font-size: 16px; 
+    }
+}
+
+
+@media only screen and (max-width: 480px){
+    #home p {
+       width: 95%;
+    }
+}
+

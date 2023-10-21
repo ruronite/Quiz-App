@@ -1,0 +1,23 @@
+form {
+    width: 60%;
+    min-height: 60vh;
+    height: max-content;
+    border: 5px solid blue;
+    margin: 50px auto;
+    padding: 10px auto;
+    background-color: gray;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+label, input {
+    display: block;
+    height: 32px;
+    margin-bottom: 10px;    
+}
+
+.form-button {
+    align-self: center;
+    margin: 20px 0; 
+}

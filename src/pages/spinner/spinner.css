@@ -1,0 +1,47 @@
+@keyframes Spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);  
+    }
+    75% {
+        transform: rotate(270deg);
+
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#spinner {
+    width: 95%;
+    padding: 10px;
+    /*border: 2px solid green;*/
+    margin: 20px auto;
+    text-align: center;
+}
+
+.spinner-container {
+    width: 50px;
+    height: auto;
+    margin: 10px auto;
+}
+
+.spinner-container img {
+    width: 100%;
+    display: block;
+    animation-name: Spin;
+    animation-iteration-count: infinite;
+    animation-duration: 450ms;
+    animation-timing-function: ease-in;
+    -webkit-animation-name: Spin;
+    -webkit-animation-duration: 450ms;
+    -webkit-animation-duration: 450ms;
+    -moz-animation-name: Spin;
+    -ms-animation-name: Spin;
+}
+

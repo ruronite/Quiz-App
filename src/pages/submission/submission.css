@@ -1,0 +1,62 @@
+#score-card {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px auto;
+    border: 2px solid wheat;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 3px gray;
+}
+
+.image-container {
+    width: 50px;
+    margin: 5px auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+#score-card button {
+    width: 200px;
+    padding: 5px;
+    margin: 5px 5px;
+   
+}
+
+
+#correction {
+    margin: 20px auto;
+    border: 3px gainsboro solid;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+    box-shadow: 2px 3px gray;    
+}
+
+
+
+#correction button {
+    width: 200px;
+    padding: 5px;
+    margin: 5px 0;
+   
+}
+
+.correction-card{
+    background-color: beige;
+    margin-top: 5px;
+    box-shadow: 2px 3px gray;
+    
+}
+
+.correction-card span {
+    font-weight: bold;
+}
