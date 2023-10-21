@@ -1,4 +1,5 @@
-let api = "http://localhost:8000"
+//let api = "http://localhost:8000"
+let api = "https://quiz-server-nnpl.onrender.com"
 
 //let count = 0;
 export async function getQuestions() {
