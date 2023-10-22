@@ -21,3 +21,7 @@ label, input {
     align-self: center;
     margin: 20px 0; 
 }
+
+input {
+    background-color: white;
+}
