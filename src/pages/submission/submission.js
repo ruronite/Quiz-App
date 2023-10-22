@@ -4,18 +4,22 @@ import {useNavigate, useLocation} from "react-router-dom"
 
 import SubmissionIcon from "./resources/successful-submission.png"
 import "./submission.css"
+import Spinner from "../spinner/spinner";
 
 
 function Submission (props){
     const [showCorrection, setShowCorrection] = useState(false);
+    /**adding extra state */
+    //const [feedBack, setFeedBack] = useState(null);
 
     const toggleCorrection = ()=>{
         setShowCorrection(prev => !prev)
     }
 
     let location  = useLocation();
-    let feedBack = location.state.feedBack || {};
     const navigate = useNavigate();
+
+    let {feedBack} = location.state || {};
 
     useEffect(()=>{
         document.title = "World Quiz | Submission"
@@ -23,8 +27,25 @@ function Submission (props){
             navigate("/info")
         }
     }, [])
+    /*
+    useEffect(()=>{
+        let pageData = location.state.feedBack || {};
+        console.log("page data",pageData)
+        if(!pageData){
+            navigate("/info")
+        }
+        else{
+            document.title = "World Quiz | Submission";
+            setFeedBack(pageData);
+        }
+    }, [])*/
+   
+   
+    
 
     return (
+        <div>
+            {!feedBack? <Spinner message="loading..."/> :
         <div>
             <section id="score-card">
                 <figure className="image-container">
@@ -58,6 +79,7 @@ function Submission (props){
             {/*<div>
                 {JSON.stringify(feedBack)};
             </div>*/}
+        </div>}
         </div>
     )
     
