@@ -26,6 +26,7 @@ function Submission (props){
         if(!feedBack){
             navigate("/info")
         }
+        // eslint-disable-next-line
     }, [])
     /*
     useEffect(()=>{

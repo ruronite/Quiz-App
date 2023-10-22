@@ -27,7 +27,7 @@ function Timer(props) {
         clearInterval(timeInterval);
       }
     }    
-  
+    // eslint-disable-next-line
   },[time])
 
   let minutes = Math.floor(time/(1000 * 60)).toString().padStart(2,"0");
