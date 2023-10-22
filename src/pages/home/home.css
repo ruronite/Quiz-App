@@ -25,7 +25,8 @@
     border-radius: 10px;
     box-shadow: 3px 5px gray;
     position: relative;
-    transition: all 450ms ease-in; 
+    transition: all 450ms ease-in;
+    margin-bottom: 20px; 
 }
 
 .nav-button:hover {

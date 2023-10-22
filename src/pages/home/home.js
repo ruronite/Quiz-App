@@ -11,6 +11,11 @@ export default function Home(props) {
         navigate("/info");
     }
 
+    const seeResult = (e)=>{
+        e.preventDefault();
+        navigate("/results")
+    }
+
     useEffect(()=>{
         document.title = "World Quiz | Home"
     }, [])
@@ -32,6 +37,7 @@ export default function Home(props) {
             </p>
 
             <button className="nav-button" onClick={handleClick}>Proceed</button>
+            <button className="nav-button" onClick={seeResult}>See Result Board</button>
         </div>
     )
 }
