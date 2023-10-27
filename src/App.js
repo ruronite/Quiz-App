@@ -12,7 +12,7 @@ import Submission from "./pages/submission/submission"
 import Results from "./pages/results/results"
 
 const router = createBrowserRouter(createRoutesFromElements(
-  <Route path="/" element={<Root />} basename={process.env.PUBLIC_URL}>
+  <Route path="/" element={<Root />}>
     <Route index element={<Home />} />
     <Route path="/info" element={<Info/>} />
     <Route path="/test" element={<Test/>} />

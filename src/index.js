@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter as Router} from "react-router-dom"
 
 
 /**Use strict mode to carry out development only, turn it off for production build*/
@@ -15,8 +16,10 @@ root.render(
 );*/
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render( 
+root.render(
+  <Router basename={process.env.PUBLIC_URL}>
     <App />
+  </Router>
 );
 
 // If you want to start measuring performance in your app, pass a function
