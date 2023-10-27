@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
 /**Use strict mode to carry out development only, turn it off for production build*/
 /*
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,7 +15,7 @@ root.render(
 );*/
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(  
+root.render( 
     <App />
 );
 
